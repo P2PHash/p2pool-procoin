@@ -30,9 +30,9 @@ nets = dict(
         BLOCK_PERIOD=60, # s
         SYMBOL='PCN',
         CONF_FILE_FUNC=lambda: os.path.join(os.path.join(os.environ['APPDATA'], 'ProCoin') if platform.system() == 'Windows' else os.path.expanduser('~/Library/Application Support/ProCoin/') if platform.system() == 'Darwin' else os.path.expanduser('~/.ProCoin'), 'ProCoin.conf'),
-        BLOCK_EXPLORER_URL_PREFIX='http://explorer.net/block/',
-        ADDRESS_EXPLORER_URL_PREFIX='http://explorer.net/address/',
-        TX_EXPLORER_URL_PREFIX='http://explorer.net/tx/',
+        BLOCK_EXPLORER_URL_PREFIX='http://cryptexplorer.com/block',
+        ADDRESS_EXPLORER_URL_PREFIX='http://cryptexplorer.com/address/',
+        TX_EXPLORER_URL_PREFIX='http://cryptexplorer.com/tx/',
         SANE_TARGET_RANGE=(2**256//1000000000 - 1, 2**256//1000 - 1),
         DUMB_SCRYPT_DIFF=2**16,
         DUST_THRESHOLD=0.03e8,
